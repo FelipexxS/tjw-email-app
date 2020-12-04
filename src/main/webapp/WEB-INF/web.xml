@@ -10,8 +10,18 @@
   	<description></description>
   	<servlet-class>br.edu.ifce.PagMail</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>MailAuth</servlet-name>
+  	<display-name>MailAuth</display-name>
+  	<description></description>
+  	<servlet-class>br.edu.ifce.auth.MailAuth</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>PagMail</servlet-name>
   	<url-pattern>/PagMail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>MailAuth</servlet-name>
+  	<url-pattern>/MailAuth</url-pattern>
   </servlet-mapping>
 </web-app>
